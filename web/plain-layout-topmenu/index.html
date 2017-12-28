@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
     <title>Plain layout with topmenu</title>
 </head>
 
@@ -11,10 +13,13 @@
     <div class="full-screen">
         <header>
             <nav>
+                <a href="#" id="menu-icon"></a>
                 <ul id="menu-items">
                     <li><a href="#" class="current">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+    				<li><a href="#">About</a></li>
+    				<li><a href="#">Work</a></li>
+    				<li><a href="#">Blog</a></li>
+    				<li><a href="#">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -38,55 +43,5 @@
         </section>
     </div>
 </body>
-<style>
-    html,
-    body,
-    .full-screen {
-    	height: 100%;
-    }
-
-    body {
-    	margin: 0;
-    }
-    body {
-        background: yellow;
-        margin: 0;
-        padding 5px;
-    }
-    
-    .full-screen {
-        display: flex;
-        flex-direction: column;
-    }
-    header {
-        background: red;
-        width: 100%;
-    }
-
-    section {
-        background: green;
-        overflow: auto;
-        text-align: center;
-    }
-    
-    .view {
-        width: 90%;
-    }
-    p, h1, h2, h3, h4, h5, h6 {
-        text-align: center;
-    }
-    
-    ul {
-        list-style: none;
-        margin: 0;
-    }
-
-    li {
-        display: inline-block;
-        float: left;
-        padding: 10px;
-        margin: 0
-    }
-</style>
 
 </html>
