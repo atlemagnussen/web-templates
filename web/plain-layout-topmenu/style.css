@@ -27,7 +27,6 @@ header {
 section {
     width: 100%;
     background: #013220;
-    overflow: auto;
     text-align: center;
     display: flex;
     flex-direction: row;
@@ -35,11 +34,13 @@ section {
 }
 
 .view {
-    width: 80%;
+    overflow: auto;
+    flex: 6;
     text-align: center;
 }
 .left, .right {
-    width: 10%;
+    flex: 1;
+    background: #3A6C41;
 }
 p, h1, h2, h3, h4, h5, h6 {
     text-align: center;
