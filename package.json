@@ -4,7 +4,8 @@
   "description": "different typical web layouts templates",
   "main": "server.js",
   "scripts": {
-    "test": "node server.js"
+    "test": "cd web && python -m http.server 3000 --bind 127.0.0.1",
+    "start": "cd web && python -m http.server 4000 --bind 127.0.0.1"
   },
   "repository": {
     "type": "git",
@@ -21,8 +22,5 @@
   "bugs": {
     "url": "https://github.com/atlemagnussen/web-templates/issues"
   },
-  "homepage": "https://github.com/atlemagnussen/web-templates#readme",
-  "devDependencies": {
-    "express": "^4.16.2"
-  }
+  "homepage": "https://github.com/atlemagnussen/web-templates#readme"
 }
