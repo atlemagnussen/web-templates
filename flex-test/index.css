@@ -11,6 +11,9 @@
     display: flex;
 }
 .information {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     display: inline-flex;
     flex: 1 1 300px;
 }
@@ -31,8 +34,9 @@
 }
 .functions {
     display: inline-flex;
-    flex: 0 0 200px;
+    flex: 0 0 100px;
 }
 .functions span {
+    border: 1px solid green;
     flex: 1 1 0;
 }
