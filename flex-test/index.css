@@ -1,0 +1,38 @@
+.outer {
+    height: 600px;
+    width: 500px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    width: 100%;
+    border: 1px solid red;
+    display: flex;
+}
+.information {
+    display: inline-flex;
+    flex: 1 1 300px;
+}
+.information span {
+    border: 1px solid blue;
+}
+.text {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title {
+    flex: 1 1 200px;
+}
+.pages, .size {
+    flex: 0 0 50px;
+}
+.functions {
+    display: inline-flex;
+    flex: 0 0 200px;
+}
+.functions span {
+    flex: 1 1 0;
+}
