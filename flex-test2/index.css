@@ -1,0 +1,54 @@
+.outer {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.list {
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    width: 100%;
+    border: 1px solid red;
+    display: inline-flex;
+    flex: 0 0 1.2rem;
+}
+.below {
+    flex: 0 0 1.5rem;
+}
+.information {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-flex;
+    flex: 1 1 300px;
+}
+.information span {
+    border: 1px solid blue;
+}
+.text {
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title {
+    flex: 1 1 200px;
+}
+.pages, .size {
+    flex: 0 0 50px;
+}
+.functions {
+    display: inline-flex;
+    flex: 0 0 100px;
+}
+.functions span {
+    border: 1px solid green;
+    flex: 1 1 0;
+}
