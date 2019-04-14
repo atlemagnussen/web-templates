@@ -1,0 +1,14 @@
+:root {
+    --brown: #9c4e16;
+    --green: #99C66D;
+    --blue: #4590e6;
+    --blue-trans: rgba(69,144,230, 0.9);
+    --light-grey: #F0F0F0;
+    --light-grey-trans: rgba(240, 240, 240, 0.7);
+    --white-trans: rgba(255, 255, 255, 0.8);
+    --white-very-trans: rgba(255, 255, 255, 0.1);
+    --red-trans: rgba(248,3,3, 0.7);
+    --purple-main: rgba(15, 2, 27, 0.6);
+    --purple-light: rgba(102,51,153, 0.6);
+    --background-pic: url(https://s3-eu-west-1.amazonaws.com/atle-static/backslash/background-city.jpg);
+}
