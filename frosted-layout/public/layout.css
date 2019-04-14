@@ -6,44 +6,36 @@ html, body, main {
     margin: 0;
     padding: 0;
 }
-main {
+body {
     background-image: var(--background-pic);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    z-index: 100;
-    box-sizing: border-box;
+}
+.container {
+    top: 450px;
+    left: 550px;
+    margin: 10px;
+    color: white;
+    width: 30rem;
+    height: 20rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
 }
 
-section {
-    width: 100%;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow: auto;
-    box-sizing: border-box;
-}
-.view {
-    top: 450px;
-    left: 350px;
-    background: rgba(255,255,255,0.3);
-    width: 250px;
-    height: 350px;
+.container:before {
+    content: "";
     position: absolute;
-    backdrop-filter: blur(5px);
-    color: white;
-}
-div:before{
-    content: “ ”;
-    background: inherit; 
-    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
     left: 0;
     right: 0;
-    top: 0; 
     bottom: 0;
-    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
     filter: blur(10px);
+    margin: -20px;
 }
