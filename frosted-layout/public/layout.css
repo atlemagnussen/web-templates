@@ -1,24 +1,48 @@
-html, body, main {
+html {
+    overflow: hidden;
     height: 100%;
-    box-sizing: border-box;
 }
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body {
     background-image: var(--background-pic);
     background-attachment: fixed; 
     background-size: cover;
+    overflow: hidden;
+    height: 100%;
+    color: white;
+}
+main {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: inherit;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+aside {
+    flex-basis: 19%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    height: 99%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+section {
+    flex-basis: 59%;
+    flex-grow: 0;
+    flex-shrink: 1;
+    height: 99%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 .container {
-    top: 450px;
-    left: 550px;
-    margin: 10px;
-    color: white;
-    width: 30rem;
-    height: 20rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);   
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
     border-radius: 5px;
     position: relative;
     z-index: 1;
@@ -35,7 +59,13 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    box-shadow: inset 0 0 2000px rgba(100, 100, 100, .5);
     filter: blur(10px);
     margin: -20px;
+}
+
+article {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
 }
